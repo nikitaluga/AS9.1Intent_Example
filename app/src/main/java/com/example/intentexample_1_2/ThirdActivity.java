@@ -27,6 +27,8 @@ public class ThirdActivity extends AppCompatActivity {
         if (number == 100){
             textView.setText("My congratulations!");
         }
-
+        if (getTextFromSecondActivity.equals("")){
+            textView.setText("Введите число !");
+        }
     }
 }

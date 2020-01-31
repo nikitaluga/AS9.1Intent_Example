@@ -19,9 +19,14 @@ public class SecondActivity extends AppCompatActivity {
     }
 
     public void onOpenThirdActivity(View view) {
-        Intent thirdActivityIntent = new Intent(this,ThirdActivity.class);
-        String editTextMassage = editText.getText().toString();
-        thirdActivityIntent.putExtra("toSecondActivity",editTextMassage);
-        startActivity(thirdActivityIntent);
+        if (editText.getText().toString().equals("")){
+
+        }else {
+            Intent thirdActivityIntent = new Intent(this,ThirdActivity.class);
+            String editTextMassage = editText.getText().toString();
+            thirdActivityIntent.putExtra("toSecondActivity",editTextMassage);
+            startActivity(thirdActivityIntent);
+        }
+
     }
 }
