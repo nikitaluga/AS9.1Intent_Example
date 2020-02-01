@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class ThirdActivity extends AppCompatActivity {
 
@@ -26,9 +27,6 @@ public class ThirdActivity extends AppCompatActivity {
         }
         if (number == 100){
             textView.setText("My congratulations!");
-        }
-        if (getTextFromSecondActivity.equals("")){
-            textView.setText("Введите число !");
         }
     }
 }

@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class SecondActivity extends AppCompatActivity {
 
@@ -20,7 +21,7 @@ public class SecondActivity extends AppCompatActivity {
 
     public void onOpenThirdActivity(View view) {
         if (editText.getText().toString().equals("")){
-
+            Toast.makeText(this,"Введите цифры !", Toast.LENGTH_LONG).show();
         }else {
             Intent thirdActivityIntent = new Intent(this,ThirdActivity.class);
             String editTextMassage = editText.getText().toString();
